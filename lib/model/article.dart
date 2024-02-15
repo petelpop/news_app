@@ -1,6 +1,4 @@
-import 'dart:html';
 
-import 'package:flutter/foundation.dart';
 
 class Article {
   final String author;
@@ -29,4 +27,6 @@ class Article {
         publishedAt: article['publishedAt'],
         content: article['content'],
       );
+
+
 }
