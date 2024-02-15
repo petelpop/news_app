@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:news_app/model/article.dart';
+import 'package:news_app/views/detailpage.dart';
 import 'package:news_app/views/listpage.dart';
 
 void main() {
@@ -19,7 +21,10 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: NewsListPage.routeName,
       routes: {
-        NewsListPage.routeName:(context) => const NewsListPage()
+        NewsListPage.routeName:(context) => const NewsListPage(),
+        ArticleDetailPage.routeName: (context) => ArticleDetailPage(
+          article: ModalRoute.of(context)?.settings.arguments as Article,
+        )
       },
     );
   }
