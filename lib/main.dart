@@ -20,7 +20,21 @@ class MyApp extends StatelessWidget {
         colorScheme: Theme.of(context).colorScheme.copyWith(
           primary: primaryColor,
           onPrimary: Colors.black,
-          secondary: secondaryColor
+          secondary: secondaryColor,
+        ),
+        textTheme: myTextTheme,
+        appBarTheme: const AppBarTheme(elevation: 0),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: secondaryColor,
+            foregroundColor: Colors.white,
+            textStyle: const TextStyle(),
+            shape: const RoundedRectangleBorder(
+              borderRadius: BorderRadius.all(
+                Radius.circular(5)
+              )
+            )
+          )
         )
       ),
       initialRoute: NewsListPage.routeName,
