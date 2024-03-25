@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/model/article.dart';
-import 'package:news_app/styles.dart';
-import 'package:news_app/views/detailpage.dart';
-import 'package:news_app/views/listpage.dart';
-import 'package:news_app/views/webview.dart';
+import 'package:news_app/common/styles.dart';
+import 'package:news_app/views/article_detail_page.dart';
+import 'package:news_app/views/home_page.dart';
+import 'package:news_app/views/article_web_view.dart';
 
 void main() {
   runApp(const MyApp());
